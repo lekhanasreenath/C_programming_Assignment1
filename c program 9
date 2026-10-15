@@ -1,0 +1,27 @@
+/* Electricity Bill - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    int units;
+    double bill;
+
+    scanf("%d", &units);
+
+    if (units < 0) {
+        printf("Invalid units\n");
+    } else if (units <= 200) {
+        bill = units * 0.50;
+        printf("Rs.%.0f\n", bill);
+    } else if (units <= 400) {
+        bill = units * 0.65 + 100;
+        printf("Rs.%.2f\n", bill);
+    } else if (units <= 600) {
+        bill = units * 0.80 + 200;
+        printf("Rs.%.2f\n", bill);
+    } else {
+        bill = units * 1.25 + 425;
+        printf("Rs.%.2f\n", bill);
+    }
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+/* Car Mileage - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    float mileage;
+    int petrolLitres, distance;
+
+    scanf("%f%d%d", &mileage, &petrolLitres, &distance);
+
+    if (mileage * petrolLitres >= distance) {
+        printf("Can reach\n");
+    } else {
+        printf("Cannot reach\n");
+    }
+
+    return 0;
+}

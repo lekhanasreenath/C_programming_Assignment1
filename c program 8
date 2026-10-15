@@ -1,0 +1,20 @@
+/* Treasure Hunt - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    int treasure, x, y;
+    int longBen, blackbeard, remaining, eachPirate;
+
+    scanf("%d", &treasure);
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    longBen = treasure * x / 100;
+    remaining = treasure - longBen;
+    blackbeard = remaining * y / 100;
+    remaining -= blackbeard;
+    eachPirate = remaining / 3;
+
+    printf("%d\n%d\n%d\n", longBen, blackbeard, eachPirate);
+    return 0;
+}

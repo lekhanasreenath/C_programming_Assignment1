@@ -1,0 +1,16 @@
+/* Dollars and Cents - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    int dollars1, cents1, dollars2, cents2;
+    int totalCents, dollars, cents;
+
+    scanf("%d%d%d%d", &dollars1, &cents1, &dollars2, &cents2);
+
+    totalCents = dollars1 * 100 + cents1 + dollars2 * 100 + cents2;
+    dollars = totalCents / 100;
+    cents = totalCents % 100;
+
+    printf("%d\n%d\n", dollars, cents);
+    return 0;
+}

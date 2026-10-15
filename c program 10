@@ -1,0 +1,20 @@
+/* Car Race - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    int a, b, c, carNumber;
+
+    scanf("%d%d%d%d", &a, &b, &c, &carNumber);
+
+    if (a % carNumber == 0) {
+        printf("Car %d goes into road A\n", carNumber);
+    } else if (b % carNumber == 0) {
+        printf("Car %d goes into road B\n", carNumber);
+    } else if (c % carNumber == 0) {
+        printf("Car %d goes into road C\n", carNumber);
+    } else {
+        printf("No path exists\n");
+    }
+
+    return 0;
+}

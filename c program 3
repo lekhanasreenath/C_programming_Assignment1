@@ -1,0 +1,19 @@
+/* Debt Repay - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    double principal, rate, years;
+    double interest, amount, discount, settlement;
+
+    scanf("%lf%lf%lf", &principal, &rate, &years);
+
+    interest = principal * rate * years / 100.0;
+    amount = principal + interest;
+    discount = interest * 0.02;
+    settlement = amount - discount;
+
+    printf("%.2f\n%.2f\n%.2f\n%.2f\n",
+           interest, amount, discount, settlement);
+
+    return 0;
+}

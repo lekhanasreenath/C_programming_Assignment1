@@ -1,0 +1,18 @@
+/* Online Examination System - C Programming Assignment 01 */
+#include <stdio.h>
+
+int main(void) {
+    int questionsAnswered, remainingTime, alreadySubmitted;
+
+    scanf("%d", &questionsAnswered);
+    scanf("%d", &remainingTime);
+    scanf("%d", &alreadySubmitted);
+
+    if (questionsAnswered >= 1 && remainingTime > 0 && alreadySubmitted == 0) {
+        printf("Submission Allowed\n");
+    } else {
+        printf("Submission Not Allowed\n");
+    }
+
+    return 0;
+}
